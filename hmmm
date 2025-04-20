@@ -22,7 +22,7 @@ local allowedUserIds = {
 local userId = game.Players.LocalPlayer.UserId
 
 if table.find(allowedUserIds, userId) then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/rolezeay/oldniggas3/refs/heads/main/hmmm"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zynlope/mainscript/refs/heads/main/hmmmm"))()
 else
     local Players = game:GetService("Players")
     local StarterGui = game:GetService("StarterGui")
