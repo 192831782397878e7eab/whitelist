@@ -22,7 +22,14 @@ local allowedUserIds = {
 local userId = game.Players.LocalPlayer.UserId
 
 if table.find(allowedUserIds, userId) then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/zynlope/mainscript/refs/heads/main/hmmmm"))()
+if queue_on_teleport then
+    queue_on_teleport([[ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zynlope/mainscript/refs/heads/main/hmmmm"))()
+    ]])
+end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zynlope/mainscript/refs/heads/main/hmmmm"))()
+
 else
     local Players = game:GetService("Players")
     local StarterGui = game:GetService("StarterGui")
