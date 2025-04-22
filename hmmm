@@ -19,7 +19,8 @@ local allowedUserIds = {
     7084459512,
     8143490271,
     3412510350,
-    4246506251
+    4246506251,
+    4315019848
 }
 
 local userId = game.Players.LocalPlayer.UserId
