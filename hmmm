@@ -42,7 +42,7 @@ else
     local Players = game:GetService("Players")
     local StarterGui = game:GetService("StarterGui")
 
-    local link = "https://discord.gg/RETGVfBVVp"
+    local link = "https://discord.gg/fTHpFCa8GB"
 
     StarterGui:SetCore("SendNotification", {
         Title = "You are not in the whitelist.",
