@@ -63,7 +63,7 @@ else
 
     StarterGui:SetCore("SendNotification", {
         Title = "You are not in the whitelist.",
-        Text = link .. "\nJoin to request an appeal.",
+        Text = link .. "\nCreate a ticket on #appeal.",
         Icon = "",
         Duration = 5,
     })
