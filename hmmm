@@ -4,4 +4,33 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zynlope/mainscript/re
     ]])
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zynlope/mainscript/refs/heads/main/hmmmm"))()
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+local UserInputService = game:GetService("UserInputService")
+
+local link = "https://discord.gg/fTHpFCa8GB"
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Thanks for using!",
+    Text = link .. "\n     Join for future updates!",
+    Icon = "",
+    Duration = 5,
+})
+
+local copied = false
+local connection
+connection = UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and not copied then
+        setclipboard(link)
+        copied = true
+
+        StarterGui:SetCore("SendNotification", {
+            Title = "Copied!",
+            Text = "Discord link has been copied to clipboard.",
+            Duration = 5
+        })
+
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/zynlope/mainscript/refs/heads/main/hmmmm"))()
+        connection:Disconnect()
+    end
+end)
