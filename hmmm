@@ -12,7 +12,7 @@ local link = "https://discord.gg/fTHpFCa8GB"
 
 StarterGui:SetCore("SendNotification", {
     Title = "Thanks for using!",
-    Text = link .. "\n     Join for future updates!",
+    Text = link .. "\n     Join for more scripts!",
     Icon = "",
     Duration = 5,
 })
